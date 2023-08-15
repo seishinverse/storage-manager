@@ -1,6 +1,6 @@
 {
   "name": "@seishinverse/storage-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Contains main service and accept different storages",
   "author": "Dmytro Honchar <demetrgonchar@gmail.com> (https://github.com/mxrcury)",
   "homepage": "https://github.com/seishinverse/storage-manager",
