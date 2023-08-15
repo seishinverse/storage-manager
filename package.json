@@ -1,0 +1,44 @@
+{
+  "name": "@seishinverse/storage-manager",
+  "version": "1.0.0",
+  "description": "Contains main service and accept different storages",
+  "author": "Dmytro Honchar <demetrgonchar@gmail.com> (https://github.com/mxrcury)",
+  "homepage": "https://github.com/seishinverse/storage-manager",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "type": "module",
+  "browser": "dist/index.umd.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "storage",
+    "manager",
+    "localstorage",
+    "s3storage",
+    "firebasestorage",
+    "azurestorage"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "build:types": "tsc -p ./tsconfig.json --outDir build --declaration true && api-extractor run",
+    "docs": "typedoc src --out docs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.5.0",
+    "eslint": "^8.47.0",
+    "rollup": "^3.28.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@microsoft/api-extractor": "^7.36.4",
+    "typedoc": "^0.24.8"
+  }
+}
